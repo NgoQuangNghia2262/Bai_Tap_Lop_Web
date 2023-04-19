@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    cursor: pointer;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    list-style: none;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+}
+button, input {
+    overflow: visible;
+    outline: none !important;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+}
+.header_TopBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c5b41;
+}
+.header_TopBar_Container{
+    width: 75%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.header_TopBar_Container div {
+    line-height: 44px;
+}
+.header_TopBar_Container_Search {
+    width: 475px;
+    display: flex;
+    align-items: center;
+}
+.header_TopBar_Container_Search-input{
+    border: none;
+   
+}
+.header_TopBar_Container_Search form{
+    display: flex;
+    background-color: #fff;
+    border-radius: 44px;
+    width: 100%;
+}
+
+.header_TopBar_Container_Search-text{
+    width: 150px;
+    text-align: center;
+    border-right: 1px #e5e5e5 solid;
+}
+.header_TopBar_Container_Search-input input{
+    height: 44px;
+    width: 100%;
+    padding-left: 15px;
+}
+.header_TopBar_Container_Search-icon{
+    font-size: 20px;
+    width: 90px;
+    background-color: #fe9614;
+    border-radius: 0 40px 40px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.header_TopBar_Container_User div{
+    display: inline-block;
+    
+}
+.header_TopBar_Container_User i{
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+}
+.header_TopBar_Container_User_Account a{
+    color: #fff;
+    font-weight: 400;
+}
+.headerMenu_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.headerMenu_container_Menu ul{
+    display: flex;
+}
+.headerMenu a{
+    color: #1c5b41;
+    font-size: 15px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.headerMenu ul li a:hover{
+    color: #fe9614;
+}
+.activate a{
+    color: #fe9614;
+}
+.container_service{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.container_service--item{
+    display: flex;
+    margin: 25px 0;
+    flex-direction: column;
+    align-items: center;
+}
+.service h3{
+    color: #fff;
+    padding-bottom: 5px;
+}
+.container_service--item img{
+    margin-bottom: 15px;
+    height: 46px;
+    display: flex;
+}
+.container_product_hot h1{
+    font-size: 40px;
+    color: #1c5b41;
+    font-weight: 700;
+    position: relative;
+}
+.product_hot-title ::before{
+    content: "";
+    position: absolute;
+    width: 105px;
+    height: 3px;
+    background-color: #fe9614;
+    border-radius: 1px;
+    top : -23px;
+   
+}
+.product_hot_menu ul{
+    display: flex;
+    align-items: center;
+}
+.product_hot_menu ul i{
+    margin: 0 25px;
+    font-size: 25px;
+}
+.product_hot_menu ul li{
+    margin: 0 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.hot_activate {
+    background-color: #fe9614;
+    border-radius: 10px;
+    color: #fff;
+}
+.product_hot ul li:hover{
+    color: #fff;
+    background-color: #fe9614;
+    border-radius: 10px;
+}
+.list_product_hot{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+.container_product_hot{
+    padding-top: 50px;
+    width: 75%; 
+    margin: 0px auto ;
+}
+.list_product_hot-item{
+   margin: 10px;
+   width: calc(20%-10px);
+   overflow: hidden;
+}
+.list_product_hot-item div{
+    margin: 10px 0px;
+}
+
+.price{
+    color: #fe9614;
+}
+.a_product_hot{
+    padding: 50px 0;
+    text-align: center;
+}
+.a_product_hot a{
+    padding: 20px 70px;
+    border-radius: 10px;
+    background-color: #1c5b41;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
+@media only screen and (max-width : 1200px) {
+   .headerMenu {
+    display: none;
+   }
+   .header_TopBar{
+    height: 65px;
+    position: relative;
+    line-height: 30px;
+   }
+   .header_TopBar_Container_Search{
+    position: absolute;
+    top : 65px;
+    left: 0px;
+    width: calc(100% - 30px);
+   }
+}
